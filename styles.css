@@ -79,6 +79,13 @@ body{
     border-radius: 10px;
     align-items: center;
     font-weight: 300;
+    cursor: pointer;
+    
+}
+.socials .social:hover{
+    color: var(--Green);
+    animation: bubble 0.4s ease-out;
+    width: 100%;
 }
 @media(max-width: 500px){
     .home{
