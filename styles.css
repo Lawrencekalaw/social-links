@@ -1,0 +1,97 @@
+@import url(https://fonts.google.com/specimen/Inter);
+:root{
+    /*Layout*/
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+/*Colors*/
+
+/*Primary*/
+
+--Green: hsl(75, 94%, 57%);
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--OffBlack: hsl(0, 0%, 8%);
+
+/*font-sizes*/
+
+--Font-size-paragraph: 14px;
+
+/*font-weights*/
+--Weights: 400, 600, 700;
+}
+body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    min-height: 700px;
+    background: var(--OffBlack);
+}
+.container{
+    background-color: var(--DarkGrey);
+    padding: 20px;
+    border-radius: 15px;
+    height: 520px;
+    width: 300px;
+    margin-top: 30px;
+}
+.profile{
+    padding: 0;
+    margin: 0;
+}
+.profile img{
+    width: 5.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .name{
+    font-size: 1.2rem;
+    color: var(--White);
+    font-weight: 400;
+}
+.profile .city{
+    font-size: .8rem;
+    color: var(--Green);
+}
+.profile .description{
+    font-size: .9rem;
+    color: var(--White);
+}
+.socials{
+    align-items: center;
+}
+.socials .social{
+    width: 100%;
+    margin-top: 12px;
+    background: var(--Grey);
+    color: var(--White);
+    border: none;
+    outline: none;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: 300;
+}
+@media(max-width: 500px){
+    .home{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .socials{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+    }
+}
